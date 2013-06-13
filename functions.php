@@ -246,8 +246,8 @@ function foundation_widgets() {
 			'id' => 'foundation_sidebar_footer_one',
 			'name' => __( 'Sidebar Footer One', 'foundation' ),
 			'description' => __( 'This sidebar is located in column one of your theme footer.', 'foundation' ),
-			'before_widget' => '<div class="large-3 columns">',
-			'after_widget' => '</div>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5>',
 			'after_title' => '</h5>',
 		) );
@@ -257,8 +257,8 @@ function foundation_widgets() {
 			'id' => 'foundation_sidebar_footer_two',
 			'name' => __( 'Sidebar Footer Two', 'foundation' ),
 			'description' => __( 'This sidebar is located in column two of your theme footer.', 'foundation' ),
-			'before_widget' => '<div class="large-3 columns">',
-			'after_widget' => '</div>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5>',
 			'after_title' => '</h5>',
 		) );
@@ -268,8 +268,8 @@ function foundation_widgets() {
 			'id' => 'foundation_sidebar_footer_three',
 			'name' => __( 'Sidebar Footer Three', 'foundation' ),
 			'description' => __( 'This sidebar is located in column three of your theme footer.', 'foundation' ),
-			'before_widget' => '<div class="large-3 columns">',
-			'after_widget' => '</div>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5>',
 			'after_title' => '</h5>',
 		) );
@@ -279,8 +279,8 @@ function foundation_widgets() {
 			'id' => 'foundation_sidebar_footer_four',
 			'name' => __( 'Sidebar Footer Four', 'foundation' ),
 			'description' => __( 'This sidebar is located in column four of your theme footer.', 'foundation' ),
-			'before_widget' => '<div class="large-3 columns">',
-			'after_widget' => '</div>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5>',
 			'after_title' => '</h5>',
 		) );
