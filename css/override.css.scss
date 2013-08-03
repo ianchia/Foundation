@@ -1,0 +1,101 @@
+@import 'foundation_global';
+
+$fluentry-dark-yellow: rgb(253, 187, 17);
+$fluentry-dark-gray: rgb(51, 51, 51);
+$fluentry-light-gray: rgba(51, 51, 51, 0.80);
+$fluentry-very-light-gray: rgba(51, 51, 51, 0.10);
+$fluentry-blue: rgb(4, 104, 164);
+$fluentry-light-blue: rgba(4, 104, 164, 0.80);
+$fluentry-very-light-blue: rgba(16, 151, 232, 0.40);
+$fluentry-font-color: rgb(64, 64, 65);
+$fluentry-link-blue: rgba(4, 104, 164, 0.8);
+
+//font-family: 'Droid Serif', serif;
+//font-family: 'Roboto', sans-serif;
+
+@mixin font-droid() {
+  font-family: 'Droid Serif', serif;
+}
+
+@mixin font-roboto() {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin fluentry-button() {
+  color: #ffffff;
+  background-color: $fluentry-dark-yellow;
+  @include font-roboto;
+  font-size: emCalc(18px);
+  line-height: 0.7em;
+  margin: 0;
+  border: 1px solid $fluentry-dark-yellow;
+  @include radius(4px);
+  box-shadow: none;
+  padding-top: 0.7em;
+  &:hover {
+    background-color: lighten($fluentry-dark-yellow, 10%);
+  }
+}
+
+.top-bar {
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  .title-area {
+    .name {
+      img {
+        vertical-align: top;
+        margin-top: 10px;
+        min-width: 164px;
+        width: 164px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+.top-bar-section ul li {
+  position: relative;
+
+  > a {
+    &:hover {
+      @include single-transition;
+      //color: $fluentry-link-blue;
+      //background-color: darken(#FFFFFF, 5%);
+      color: #000000;
+    }
+    &.login {
+      color: $fluentry-link-blue;
+      font-weight: bold;
+    }
+  }
+
+  .yellow-underbar {
+    visibility: hidden;
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 11px;
+    height: 4px;
+    background-color: $fluentry-dark-yellow;
+  }
+
+  &:hover {
+    .yellow-underbar {
+      visibility: visible;
+    }
+  }
+}
+
+// style the button in the nav
+.top-bar-section ul li > a.button, .top-bar .button {
+  @include fluentry-button;
+  font-size: emCalc(15px);
+  padding-top: 0.5em;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.top-bar-section ul li>a {
+  border: none;
+}
