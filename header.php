@@ -107,4 +107,4 @@ if ($header !== "blank") : ?>
 <?php endif; ?>
 
 <!-- Begin Page -->
-<div class="row">
+<div class="row content-wrapper">

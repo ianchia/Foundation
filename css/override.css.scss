@@ -99,3 +99,18 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 .top-bar-section ul li>a {
   border: none;
 }
+
+// blog post block
+.main-content {
+  padding-top: emCalc(60px);
+  background-color: #FFFFFF;
+}
+
+.sidebar {
+  padding-top: emCalc(60px);
+}
+
+.content-wrapper {
+  background-image: url(../img/very-light-gray-square.png);
+  background-repeat: repeat;
+}
