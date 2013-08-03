@@ -104,6 +104,7 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 .main-content {
   padding-top: emCalc(60px);
   background-color: #FFFFFF;
+  min-height: 600px;
 }
 
 .sidebar {
@@ -113,4 +114,9 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 .content-wrapper {
   background-image: url(../img/very-light-gray-square.png);
   background-repeat: repeat;
+}
+
+// used for archive page, for category/author/archive results
+h1.page-title {
+  font-size: 32px;
 }
