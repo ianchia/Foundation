@@ -24,8 +24,8 @@
 		<a href="<?php the_permalink(); ?>" class="th" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
 	<?php endif; ?>
 
-	<?php the_excerpt(); ?>
-	
+    <?php if (function_exists('has_excerpt') && has_excerpt()) the_excerpt();  else the_content(); ?>
+
 	<hr>
 
 </article>
