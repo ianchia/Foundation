@@ -30,6 +30,12 @@
 
     <?php if (function_exists('has_excerpt') && has_excerpt()) the_excerpt();  else the_content(); ?>
 
-	<hr>
+    <footer>
+    <?php _e('Posted in', 'foundation' );?> <?php the_category(', '); ?>
+    <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+        <span class="sep"> | </span>
+        <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '_s' ), __( '1 Comment', '_s' ), __( '% Comments', '_s' ) ); ?></span>
+    <?php endif; ?>
+    </footer>
 
 </article>
