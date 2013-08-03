@@ -28,7 +28,7 @@ function foundation_setup() {
 	add_editor_style();
 
 	// Support for Featured Images
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' );
 
 	// Automatic Feed Links & Post Formats
 	add_theme_support( 'automatic-feed-links' );
@@ -63,7 +63,7 @@ function foundation_assets() {
 
 	if (!is_admin()) {
 
-		/** 
+		/**
 		 * Deregister jQuery in favour of ZeptoJS
 		 * jQuery will be used as a fallback if ZeptoJS is not compatible
 		 * @see foundation_compatibility & http://foundation.zurb.com/docs/javascript.html
@@ -79,10 +79,11 @@ function foundation_assets() {
 		wp_enqueue_style( 'normalize', get_template_directory_uri().'/css/normalize.css' );
 		wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/foundation.min.css' );
 		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
+        wp_enqueue_style( 'override', get_template_directory_uri().'/css/override.css' );
 
 		// Load Google Fonts API
-		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300' );
-	
+		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' );
+
 	}
 
 }
@@ -141,7 +142,7 @@ function foundation_menus() {
 			'header-menu' => __( 'Header Menu', 'foundation' )
 		)
 	);
-	
+
 }
 
 add_action( 'init', 'foundation_menus' );
@@ -336,7 +337,7 @@ add_filter('get_the_excerpt', 'foundation_excerpt');
 
 endif;
 
-/** 
+/**
  * Comments Template
  */
 
