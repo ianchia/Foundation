@@ -13,7 +13,7 @@ Tags: two-columns
 
 /* Artfully masterminded by ZURB  */
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
 :: Images
@@ -61,7 +61,7 @@ article .th {margin-bottom:10px; margin-bottom:1em;}
    Typography
 ----------------------------------------- */
 
-body,h1,h2,h3,h4,h5,h6,p {font-family: 'Open Sans', sans-serif;}
+body,h1,h2,h3,h4,h5,h6,p {font-family: 'Roboto', sans-serif; color: rgb(64, 64, 64);}
 h1,h2,h3,h4,h5,h6,a:link {font-weight:300;}
 
 .site-title .subheader {margin-bottom:0;}

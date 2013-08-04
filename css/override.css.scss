@@ -37,6 +37,13 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
   }
 }
 
+a {
+  color: rgb(4, 104, 164);
+  &:hover {
+    color: darken(rgb(4, 104, 164), 20%);
+  }
+}
+
 .top-bar {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -114,9 +121,92 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 .content-wrapper {
   background-image: url(../img/very-light-gray-square.png);
   background-repeat: repeat;
+
 }
 
 // used for archive page, for category/author/archive results
 h1.page-title {
-  font-size: 32px;
+  font-size: emCalc(32px);
 }
+
+// I can't tell where the style="padding-top: 55px" is coming from, hence this hack :(
+body {
+  padding-top: 0px !important;
+}
+
+// blog post styling
+article {
+  margin-bottom: 60px;
+
+  header {
+    h3 {
+      position: relative;
+      margin-bottom: 20px;
+      a {
+        @include font-roboto;
+        font-size: 36px;
+        color: rgb(51, 51, 51);
+        font-weight: normal;
+      }
+    }
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  footer, .entry-meta {
+    @include font-roboto;
+    font-weight: 300;
+    font-size: emCalc(12px);
+    font-style: italic;
+  }
+  .entry-meta {
+    margin-bottom: 45px;
+  }
+}
+
+h3, h5 {
+  position: relative;
+
+  .header-decoration {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: $fluentry-dark-yellow;
+    width: 132px;
+    height: 1px;
+  }
+}
+
+
+// sidebar
+.sidebar {
+  .widget-block {
+    margin-top: 50px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  h5 {
+    @include font-droid;
+    font-size: 36px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  ul, .textwidget {
+    @include font-roboto;
+    font-size: emCalc(16px);
+    color: rgb(93, 93, 93);
+    font-weight: 300;
+  }
+
+  .textwidget {
+    line-height: emCalc(24px);
+  }
+
+}
+
