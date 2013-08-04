@@ -28,6 +28,7 @@
 
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
+    <link href="<?php echo get_template_directory_uri(); ?>/img/fluentry-favicon-wbg-rounded.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
     <title><?php wp_title(); ?></title>
 
