@@ -120,9 +120,9 @@ a {
 }
 
 .content-wrapper {
+  margin-top: emCalc(55px); // height of the navbar
   background-image: url(../img/very-light-gray-square.png);
   background-repeat: repeat;
-
 }
 
 // used for archive page, for category/author/archive results

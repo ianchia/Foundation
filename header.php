@@ -56,36 +56,36 @@
             <ul class="right">
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a href="#">Who It's For</a>
+                    <a href="http://www.fluentry.com/#who-its-for">Who It's For</a>
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a href="#">How It Works</a>
+                    <a href="http://www.fluentry.com/#how-it-works">How It Works</a>
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a href="#">Tour</a>
+                    <a href="http://www.fluentry.com/pages/tour">Tour</a>
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="http://www.fluentry.com/#meet-the-team">About</a>
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="/">Blog</a>
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider"></li>
                 <li class="has-form">
-                    <a class="button cta" href="#">Sign Up</a>
+                    <a class="button cta" href="https://app.fluentry.com/auth/sign_up">Sign Up</a>
                 </li>
                 <li class="divider show-for-small"></li>
                 <li>
-                    <a class="login" href="#">Login</a>
+                    <a class="login" href="https://app.fluentry.com/auth/sign_in">Login</a>
                 </li>
             </ul>
         </section>
