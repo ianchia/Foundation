@@ -40,7 +40,8 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 a {
   color: rgb(4, 104, 164);
   &:hover {
-    color: darken(rgb(4, 104, 164), 20%);
+    @include single-transition;
+    color: lighten(rgb(4, 104, 164), 10%);
   }
 }
 
