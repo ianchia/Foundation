@@ -88,7 +88,7 @@ a {
     background-color: $fluentry-dark-yellow;
   }
 
-  &:hover {
+  &:hover, &.selected {
     .yellow-underbar {
       visibility: visible;
     }

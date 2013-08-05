@@ -75,7 +75,7 @@
                     <div class="yellow-underbar"></div>
                 </li>
                 <li class="divider show-for-small"></li>
-                <li>
+                <li class="selected">
                     <a href="/">Blog</a>
                     <div class="yellow-underbar"></div>
                 </li>
