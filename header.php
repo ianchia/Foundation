@@ -29,6 +29,9 @@
 
     <title><?php wp_title(); ?></title>
 
+    <!--[if IE 8 ]>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js?ver=1.0"></script>
+    <![endif]-->
     <?php wp_head(); ?>
 
 </head>
