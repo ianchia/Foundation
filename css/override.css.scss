@@ -13,12 +13,29 @@ $fluentry-link-blue: rgba(4, 104, 164, 0.8);
 //font-family: 'Droid Serif', serif;
 //font-family: 'Roboto', sans-serif;
 
-@mixin font-droid() {
+// currently only a "title" font
+@mixin font-droid-bold() {
   font-family: 'Droid Serif', serif;
+  font-weight: bold;
+}
+
+@mixin font-droid-bold-italic() {
+  @include font-droid-bold;
+  font-style: italic;
 }
 
 @mixin font-roboto() {
   font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-roboto-light() {
+  @include font-roboto;
+  font-weight: 300;
+}
+
+@mixin font-roboto-light-italic() {
+  @include font-roboto-light;
+  font-style: italic;
 }
 
 @mixin fluentry-button() {
@@ -158,10 +175,8 @@ article {
   }
 
   footer, .entry-meta {
-    @include font-roboto;
-    font-weight: 300;
+    @include font-roboto-light-italic;
     font-size: emCalc(12px);
-    font-style: italic;
   }
   .entry-meta {
     margin-bottom: 45px;
@@ -196,18 +211,15 @@ h3, h5 {
   }
 
   h5 {
-    @include font-droid;
+    @include font-droid-bold-italic;
     font-size: 36px;
     color: rgb(93, 93, 93);
-    font-weight: bold;
-    font-style: italic;
   }
 
   ul, .textwidget {
-    @include font-roboto;
+    @include font-roboto-light;
     font-size: emCalc(16px);
     color: rgb(93, 93, 93);
-    font-weight: 300;
   }
 
   .textwidget {
@@ -225,5 +237,45 @@ h3, h5 {
 @media only screen and (min-width: 805px) {
   .main-content {
     padding-right: 75px;
+  }
+}
+
+
+// ie hacks
+.lt-ie9 {
+  .top-bar {
+    .top-bar-section {
+      background-color: #FFFFFF;
+    }
+    ul {
+      li {
+        a {
+          background-color: #FFFFFF;
+          height: 55px;
+          padding-right: 20px;
+          &.button {
+            height: 30px;
+          }
+        }
+        &.has-form {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+// animations no worky in ie9 :(
+.ie9 {
+  .workflow-timeline-desktop {
+    .workflow-card-container {
+      opacity: 1;
+    }
+  }
+
+  .heading-decoration {
+    &.thick {
+      opacity: 1;
+    }
   }
 }

@@ -82,7 +82,7 @@ function foundation_assets() {
         wp_enqueue_style( 'override', get_template_directory_uri().'/css/override.css' );
 
 		// Load Google Fonts API
-		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' );
+		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:700|Roboto:400,300,300italic,700' );
 
 	}
 
