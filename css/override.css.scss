@@ -105,7 +105,7 @@ a {
     background-color: $fluentry-dark-yellow;
   }
 
-  &:hover, &.selected {
+  &.selected {
     .yellow-underbar {
       visibility: visible;
     }
@@ -138,7 +138,8 @@ a {
 }
 
 .content-wrapper {
-  margin-top: emCalc(55px); // height of the navbar
+  margin-top: emCalc(55px);
+  // height of the navbar
   background-image: url(../img/very-light-gray-square.png);
   background-repeat: repeat;
 }
@@ -200,7 +201,6 @@ h3, h5 {
   }
 }
 
-
 // sidebar
 .sidebar {
   .widget-block {
@@ -225,7 +225,23 @@ h3, h5 {
   .textwidget {
     line-height: emCalc(24px);
   }
+}
 
+@media only screen and (min-width: 640px) {
+
+  .top-bar-section ul li {
+    &:hover {
+      .yellow-underbar {
+        visibility: visible;
+      }
+    }
+  }
+
+  .heading-decoration {
+    &.thick {
+      opacity: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -239,7 +255,6 @@ h3, h5 {
     padding-right: 75px;
   }
 }
-
 
 // ie hacks
 .lt-ie9 {
